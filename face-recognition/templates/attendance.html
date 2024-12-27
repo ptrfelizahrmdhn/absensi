@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Attendance</h2>
+<p>Click the button below to start attendance:</p>
+<button onclick="startCamera()">Start Attendance</button>
+<script>
+    function startCamera() {
+        window.location.href = "/start_camera"; // Akan diarahkan ke kamera real-time
+    }
+</script>
+{% endblock %}
